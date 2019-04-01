@@ -6,7 +6,7 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(params[:reservation])
     @reservation.request = request
-    if request.deliver
+    if @reservation.deliver
       flash.now[:error] = nil
     else
       flash.now[:error] = "Cannot send reservation"
