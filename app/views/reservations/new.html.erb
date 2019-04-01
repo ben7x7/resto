@@ -1,0 +1,30 @@
+<h2>Make online reservation</h2>
+
+<div class="reservation-wrapper">
+  <%= form_for @reservation do |f| %>
+   <%= f.label :name %>
+   <%= f.text_field :name, required: true %>
+
+   <%= f.label :email %>
+   <%= f.email_field :email, required: true %>
+
+   <%= f.label :phone %>
+   <%= f.text_field :phone, required: true %>
+
+   <%= f.label :pax %>
+   <%= f.text_field :pax, required: true %>
+
+   <%= f.label :date %>
+   <%= f.date_field :date, required: true %>
+
+   <%= f.label :time %>
+   <%= f.time_field :time, required: true %>
+
+   <div class="hidden">
+     <%= f.label :nichname %>
+     <%= f.text_field :nickname, hint: 'Leave it blank' %>
+   </div>
+
+   <%= f.input 'Reserve a table', class: "button" %>
+  <%= end %>
+</div>
