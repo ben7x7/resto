@@ -36,3 +36,12 @@
 hr {
   margin-top: 0 !important;
 }
+
+.nav-pills,
+.nav-link {
+  color: #E67E22;
+  text-decoration: none;
+  :hover {
+    color: #E67E22;
+  }
+}

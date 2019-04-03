@@ -6,9 +6,9 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(params[:reservation])
     if @reservation.deliver
-      flash.now[:error] = nil
+      flash[:success] = "Email sent !"
     else
-      flash.now[:error] = "Cannot send reservation"
+      flash[:alert] = "Cannot send reservation"
       render :new
     end
   end
