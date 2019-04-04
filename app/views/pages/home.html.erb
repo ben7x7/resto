@@ -571,7 +571,42 @@
 </section>
 
 <section class="section section-gallery">
-  <h2>Our gallery</h2>
+  <div class="wrapper-gallery">
+    <div class="container">
+      <div class="title-header text-center">
+        <h2>Our gallery</h2>
+      </div>
+      <div class="wrapper-carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag "welcome.png", class: "d-block w-100", alt: "welcome" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "salle.png", class: "d-block w-100", alt: "salle" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "entree1.png", class: "d-block w-100", alt: "salle" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "plat1.png", class: "d-block w-100", alt: "salle" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "dessert.png", class: "d-block w-100", alt: "dessert" %>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section section-map section-light">
