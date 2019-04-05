@@ -21,6 +21,30 @@
   padding: 2rem 0;
 }
 
+.presentation {
+  background-image: image-url('logo-brun.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper-presentation {
+  padding: 5rem 0;
+
+}
+
+.description {
+  font-size: 18px;
+
+}
+.description hr {
+  border-color: #E67E22;
+}
+
+.panneau img,
+.salle img {
+  width: 100%;
+}
+
 .wrapper-menu {
   background-color: white;
   min-height: 100vh;
@@ -47,9 +71,12 @@ hr {
 }
 
 .wrapper-gallery {
+  background-color: #2D2F30;
+  color: #F4F4F4;
   padding: 5rem 0;
 }
 
 .wrapper-carousel {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
+
