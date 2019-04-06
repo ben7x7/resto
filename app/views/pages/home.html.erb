@@ -6,8 +6,17 @@
       <br>
       <%= image_tag "title.png" %>
     </div>
-
-    <p>-  Thaï Restaurant  -</p>
+    <div class="subtitle-details d-flex flex-column justify-content-center mb-0">
+      <div class="address d-flex flex-row justify-content-center mb-0">
+        <i class="fas fa-map-marker-alt"></i><p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
+      </div>
+      <div class="phone d-flex flex-row justify-content-center">
+        <i class="fas fa-phone"></i><p>+41.22.792.1900</p>
+      </div>
+    </div>
+    <div class="home-link text-center">
+      <%= link_to "Reservation", new_reservation_path, class: "btn-reservation-home" %>
+    </div>
   </div>
 </div>
 <div class="presentation">
@@ -590,6 +599,9 @@
           </div>
         </div>
       </div>
+      <div class="home-link text-center">
+        <%= link_to "Reservation", new_reservation_path, class: "btn-reservation-home" %>
+      </div>
     </div>
   </div>
 </section>
@@ -598,7 +610,63 @@
   <%= image_tag "salle-width.png" %>
 </div>
 
-<section class="section section-reservation">
+<section class="section section-info">
+  <div class="wrapper-info">
+    <div class="container">
+      <div class="title-info text-center">
+        <h2>Contact</h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="window-info">
+            <div class="title-window">
+              <h5>CONTACT INFO</h5>
+              <hr>
+            </div>
+
+            <ul class="list-contact">
+              <li class="list-item d-flex mb-3">
+                <i class="fas fa-map-marker-alt"></i>
+                <h5>rue du Gaudy-le-Fort 14, 1213 Onex</h5>
+              </li>
+              <li class="list-item d-flex mb-3">
+                <i class="fas fa-phone"></i>
+                <h5>+41 22 792 1900</h5>
+              </li>
+              <li class="list-item d-flex mb-3">
+                <i class="far fa-envelope"></i>
+                <h5>contact@tabledesartisans.ch</h5>
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div class="window-info">
+            <div class="title-window">
+              <h5>OPENING HOURS</h5>
+              <hr>
+            </div>
+
+            <ul class="list-contact">
+              <li class="list-hours d-flex justify-content-between mb-3">
+                <h5>MONDAY - FRIDAY</h5>
+                <h5>12H - 14H30</h5>
+              </li>
+              <li class="list-hours d-flex justify-content-between mb-3">
+                <h5>TUESDAY - SATURDAY</h5>
+                <h5>19H - 22H30</h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.429257521167!2d6.097866650945921!3d46.182015993177515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0805a3879d47302!2sLa+Table+des+Artisans+-+Restaurant+Tha%C3%AF!5e0!3m2!1sfr!2sfr!4v1554471937689!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 </section>
 

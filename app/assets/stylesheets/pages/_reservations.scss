@@ -16,13 +16,13 @@
 .button-reservation {
   padding: 1rem 2rem;
   border: solid 1px #E67E22;
-  color: #E67E22;
+  color: $main;
   background-color: transparent;
   border-radius: 5px;
 }
 
 .button-reservation:hover {
-  background-color: #E67E22;
+  background-color: $main;
   color: white;
   font-weight: bold;
 }

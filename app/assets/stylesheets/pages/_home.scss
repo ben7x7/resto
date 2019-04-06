@@ -14,13 +14,43 @@
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
+}
+
+.subtitle-details p {
+  margin-bottom: 0.5rem;
+}
+
+.fas,
+.far {
+  padding-right: 1rem;
 }
 
 .logos {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
+.home-link {
+  padding-top: 2rem;
+}
+.btn-reservation-home {
+  padding: 1rem 2rem;
+  color: $main !important;
+  background-color: transparent !important;
+  border: solid 2px $main !important;
+
+  border-radius: 5px;
+  font-size: 1.5rem !important;
+  font-weight: bold;
+
+}
+
+.btn-reservation-home:hover {
+  background-color: $main !important;
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+}
 .presentation {
   background-image: image-url('logo-brun.png');
   background-repeat: no-repeat;
@@ -37,7 +67,7 @@
 
 }
 .description hr {
-  border-color: #E67E22;
+  border-color: $main;
 }
 
 .panneau img,
@@ -63,16 +93,45 @@ hr {
 
 .nav-pills,
 .nav-link {
-  color: #E67E22;
+  color: $main;
   text-decoration: none;
   :hover {
-    color: #E67E22;
+    color: $main;
+  }
+}
+.wrapper-info {
+  padding: 5rem 0;
+  color: #F4F4F4;
+  background-color: #454647;
+}
+
+.title-window {
+  color: $main;
+  font-weight: bold;
+  hr {
+    border: solid 1px $main,
   }
 }
 
+.window-info {
+  padding: 1rem 2rem;
+}
+
+ul.list-contact {
+  list-style: none;
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 1rem;
+}
+
+li.list-item {
+  margin-bottom: 1rem;
+  display: flex-row;
+}
+
 .wrapper-gallery {
-  background-color: #2D2F30;
-  color: #F4F4F4;
+  background-color: #F4F4F4;
+  color: #2D2F30;
   padding: 5rem 0;
 }
 
