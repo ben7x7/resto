@@ -1,3 +1,49 @@
+en:
+  menu-title: "Our menu"
+  menu-subtitle: "All dishes are available to takeaway"
+
+  pill-1: "Starters"
+  pill-2: "Mains"
+  pill-3: "Noodles"
+  pill-4: "Desserts"
+
+  starter-1: "Tom-Yam soup with shrimps"
+  starter-2: "Tom-Kha soup with chicken and coconut milk"
+  starter-3: "Chicken Satay"
+  starter-4: "Deep-fried shrimps dumplings"
+  starter-5: "Vegetarian springrolls"
+  starter-6: "Steamed shrimps and chicken dumplings"
+  starter-7: "Spicy beef salad (Main / Frs 27)"
+  starter-8: "Spicy minced chicken salad (Main / Frs 27)"
+  starter-9: "Spicy papaya salad in 'Som Tam Thaï' style"
+  starter-10: "Spicy papaya salad with shrimps"
+
+  main-1: "Sweet & sour chicken, or pork"
+  main-2: "Red curry chicken, or pork"
+  main-3: "Green curry chicken, or pork with bamboo shoot"
+  main-4: "Stir-fried chicken, or pork with fresh chili and basil leaves"
+  main-5: "Stir-fried chicken, or pork with ginger and mushrooms"
+  main-6: "Stir-fried chicken, or pork with cashew nuts and onions"
+  main-7: "Red curry beef, or shrimps"
+  main-8: "Green curry beef, or shrimps with bamboo shoot"
+  main-9: "Stir-fried beef with oyster dressing and mushrooms"
+  main-10: "Stir-fried beef, or shrimps with garlic and pepper"
+  main-11: "Red curry of fish filet (upon availability)"
+
+  noodle-1: "Stir-fried rice noodles with shrimps in Thai style"
+  noodle-2: "Stir-fried rice noodles with chicken"
+  noodle-3: "stir-fried mixed vegetables with oyster dressing"
+  noodle-4: "Stir-fried rice noodles with chicken and fresh chili"
+  noodle-5: "Steamed rice"
+  noodle-6: "Fried rice with garlic and chive"
+
+  dessert-1: "Half Thai mango"
+  dessert-2: "Half Thai mango with sticky rice"
+  dessert-3: "Pineapple confit with Cointreau, ice cream"
+  dessert-4: "Exotic fruits salad"
+  dessert-5: "Chestnut & coconut milk flan "
+  dessert-6: "Ice cream or sorbet (per bowl)"
+
 # Files in the config/locales directory are used for internationalization
 # and are automatically loaded by Rails. If you want to use locales other
 # than English, add the necessary files in this directory.
@@ -29,5 +75,4 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+

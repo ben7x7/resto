@@ -15,30 +15,23 @@
         <%= link_to "Reservation", new_reservation_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Menu", "#", class: "nav-link" %>
+        <%= link_to "Menu", "#menu", class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Traiteur", "#", class: "nav-link" %>
+        <%= link_to "Catering", lamaisonthai_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Contact", "#", class: "nav-link" %>
+        <%= link_to "Contact", "#contact", class: "nav-link" %>
       </li>
-      <div class="dropdown">
-        <i class="fas fa-bars" data-toggle="dropdown"></i>
-        <ul class="dropdown-menu dropdown-log navbar-resto-dropdown-menu">
-          <li>
-            <%= link_to new_user_session_path do %>
-              <%= image_tag "sign-in.png", height: 20 %> <%= t('.sign_in', default: "Log in") %>
-            <% end %>
-          </li>
-          <div class="dropdown-divider"></div>
-          <li>
-            <%= link_to destroy_user_session_path, method: :delete do %>
-              <%= image_tag "sign-out.png", height: 20 %> <%= t(".sign_out", default: "Log out") %>
-            <% end %>
-          </li>
-        </ul>
-      </div>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          EN
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to "FR", "#", class: "nav-link" %>
+          <%= link_to "TH", "#", class: "nav-link" %>
+        </div>
+      </li>
     </ul>
   </div>
 </div>

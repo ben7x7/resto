@@ -6,36 +6,38 @@
       <br>
       <%= image_tag "title.png" %>
     </div>
-    <div class="subtitle-details d-flex flex-column justify-content-center mb-0">
-      <div class="address d-flex flex-row justify-content-center mb-0">
-        <i class="fas fa-map-marker-alt"></i><p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
-      </div>
-      <div class="phone d-flex flex-row justify-content-center">
-        <i class="fas fa-phone"></i><p>+41.22.792.1900</p>
+    <div class="subtitle-details d-flex flex-column justify-content-center mb-2">
+      <div class="text-center">
+        <h3>Thai restaurant</h3>
       </div>
     </div>
-    <div class="home-link text-center">
-      <%= link_to "Reservation", new_reservation_path, class: "btn-reservation-home" %>
+    <div class="home-link mt-3 text-center">
+      <%= link_to "Make a reservation", new_reservation_path, class: "btn-reservation-home btn-white" %>
+    </div>
+  </div>
+  <div class="ptext2">
+    <div class="address d-flex flex-row">
+      <i class="fas fa-map-marker-alt"></i><p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
+    </div>
+    <div class="phone d-flex flex-row">
+      <i class="fas fa-phone"></i><p>+41.22.792.1900</p>
     </div>
   </div>
 </div>
 <div class="presentation">
   <div class="wrapper-presentation">
     <div class="container">
-      <div class="text-center d-flex justify-content-center">
-        <div class="row">
-          <div class="description">
-            <p>Niché au coeur du vieux-bourg d'Onex, La Table des Artisans vous <br> invite à une escapade gourmande entre amis ou en famille, dans un lieu <br>calme et pitoresque.</p>
-            <br>
-            <hr>
-            <br>
-            <p>Sa Cuisine traditionnelle et délicieuse met en avant les produits <br>régionaux et de saison pour vous offrir le meilleur du goût et des saveurs.</p>
-            <br>
-            <hr>
-            <br>
-            <p>Tous les midis, nous proposons une formule "Menu du jour":</p>
-            <p> une entrée + un plat pour 18. Frs</p>
-          </div>
+      <div class="row">
+        <div class="description">
+          <hr class="myhr">
+          <p id="welcome">Welcome</p>
+          <br>
+          <p>Located in the heart of Onex's old town district, La Table des Artisans would like to welcome you to this elegant and charming Thai restaurant. </p>
+          <p>You will experience a gourmet getaway into the tasty and flavored world of the Traditional Thai Cuisine. An express transfert to Thailand with no jet-lag !</p>
+          <p>A delicious and fabulous experience to share with your friends, familly, clients or employees.</p>
+          <p>La Table des Artisans promotes fresh, local and season products in its kitchen to offer you the best tasts and flavors.</p>
+          <br>
+          <hr class="myhr">
         </div>
       </div>
     </div>
@@ -46,561 +48,564 @@
   <%= image_tag "panneau.png" %>
 </div>
 
-<section class="section section-menu">
+<section class="section section-menu" id="menu">
   <div class="wrapper-menu">
     <div class="container">
       <div class="title-header text-center">
         <h2>Our menu</h2>
       </div>
-        <br>
       <div class="title-subheader text-center text-muted">
-        <p class="title-subheader">All dishes are also available to take away</p>
+        <p class="title-subheader">All dishes are available to takeaway.<br>
+          At lunch only, we propose a "daily menu" for 18. Frs</p>
+          <br>
       </div>
-      <ul class="nav nav-pills justify-content-center mt-5 mb-5" id="pills-tab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="pills-entrees-tab" data-toggle="pill" href="#pills-entrees" role="tab" aria-controls="pills-entrees" aria-selected="true">Starters</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-plats-tab" data-toggle="pill" href="#pills-plats" role="tab" aria-controls="pills-plats" aria-selected="false">Mains</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-accompagnements-tab" data-toggle="pill" href="#pills-accompagnements" role="tab" aria-controls="pills-accompagnements" aria-selected="false">Noodles</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-desserts-tab" data-toggle="pill" href="#pills-desserts" role="tab" aria-controls="pills-desserts" aria-selected="false">Desserts</a>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-entrees" role="tabpanel" aria-labelledby="pills-entrees-tab">
-          <div class="row section_menu_grid_item entrees ">
-            <div class="col-md-6 section_menu_item">
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Potage épicé aux crevettes</p>
+      <div class="wrapper-carte">
+        <ul class="nav nav-pills justify-content-center mt-2 mb-5" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-entrees-tab" data-toggle="pill" href="#pills-entrees" role="tab" aria-controls="pills-entrees" aria-selected="true">Starters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-plats-tab" data-toggle="pill" href="#pills-plats" role="tab" aria-controls="pills-plats" aria-selected="false">Mains</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-accompagnements-tab" data-toggle="pill" href="#pills-accompagnements" role="tab" aria-controls="pills-accompagnements" aria-selected="false">Noodles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-desserts-tab" data-toggle="pill" href="#pills-desserts" role="tab" aria-controls="pills-desserts" aria-selected="false">Desserts</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-entrees" role="tabpanel" aria-labelledby="pills-entrees-tab">
+            <div class="row section_menu_grid_item entrees ">
+              <div class="col-md-6 section_menu_item">
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Potage épicé aux crevettes</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-right">
-                      <strong>Frs 12</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Potage épicé au poulet et lait de coco</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 12</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-right">
+                        <strong>Frs 12</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Brochettes de poulet au Satay</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Potage épicé au poulet et lait de coco</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 10</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Raviolis aux crevettes frits</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 10</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 12</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Rouleaux de printemps végétarien</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Brochettes de poulet au Satay</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 10</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-            </div>
-            <div class="col-md-6 section_menu_item">
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Raviolis aux crevettes et poulet à la vapeur</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 10</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 10</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Salade épicée de boeuf (Plat / Frs 27)</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Raviolis aux crevettes frits</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 14</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Salade épicée de poulet haché (Plat / Frs 27)</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 14</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 10</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Salade épicée de papaye façon "Som Tam Thaï"</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Rouleaux de printemps végétarien</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 12</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Salade épicée de papaye avec crevettes</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 27</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 10</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <hr>
               </div>
-              <hr>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="pills-plats" role="tabpanel" aria-labelledby="pills-plats-tab">
-          <div class="row section_menu_grid_item plats ">
-            <div class="col-md-6 section_menu_item">
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Poulet ou porc à l'aigre douce</p>
+              <div class="col-md-6 section_menu_item">
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Raviolis aux crevettes et poulet à la vapeur</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 25</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 10</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Poulet ou porc au curry rouge</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Salade épicée de boeuf (Plat / Frs 27)</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 25</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Poulet ou porc au curry vert et bambou</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 25</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 14</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Poulet ou porc, sauté aux piments frais et au basilic</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Salade épicée de poulet haché (Plat / Frs 27)</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 25</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Poulet ou porc, sauté au gingembre et champignons</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 25</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 14</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Poulet ou porc, sauté aux noix de cajou et oignons</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Salade épicée de papaye façon "Som Tam Thaï"</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 25</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-            </div>
-            <div class="col-md-6 section_menu_item">
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Boeuf ou crevettes au curry rouge</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 27</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 12</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Boeuf ou crevettes au curry vert et bambou</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Salade épicée de papaye avec crevettes</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 27</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Boeuf sauté à la sauce d'huitre et champignons</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 27</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 27</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <hr>
               </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Boeuf ou crevettes sauté à l'ail et poivre</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 27</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Filet de poisson au curry rouge</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 27</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
             </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="pills-accompagnements" role="tabpanel" aria-labelledby="pills-accompagnements-tab">
-          <div class="row section_menu_grid_item accompagnments ">
-            <div class="col-md-6 section_menu_item">
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Nouilles de riz sautées aux crevettes "Pad Thaï"</p>
+          <div class="tab-pane fade" id="pills-plats" role="tabpanel" aria-labelledby="pills-plats-tab">
+            <div class="row section_menu_grid_item plats ">
+              <div class="col-md-6 section_menu_item">
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Poulet ou porc à l'aigre douce</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 28</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Nouilles de riz sautées au poulet "Pad Sea Ew"</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 26</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 25</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Sauté de légumes mixtes à la sauce d'huitre</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Poulet ou porc au curry rouge</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 16</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-            </div>
-            <div class="col-md-6 section_menu_item">
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Nouilles de riz sautées au poulet et piment frais</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 28</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 25</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Riz blanc</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Poulet ou porc au curry vert et bambou</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 3</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Riz sauté à l'ail et ciboulette</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 5</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 25</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Poulet ou porc, sauté aux piments frais et au basilic</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 25</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Poulet ou porc, sauté au gingembre et champignons</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 25</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Poulet ou porc, sauté aux noix de cajou et oignons</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 25</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
               </div>
-              <hr>
+              <div class="col-md-6 section_menu_item">
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Boeuf ou crevettes au curry rouge</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 27</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Boeuf ou crevettes au curry vert et bambou</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 27</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Boeuf sauté à la sauce d'huitre et champignons</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 27</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Boeuf ou crevettes sauté à l'ail et poivre</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 27</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Filet de poisson au curry rouge</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 27</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-desserts-tab">
-          <div class="row section_menu_grid_item desserts ">
-            <div class="col-md-6 section_menu_item">
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Demie mangue thaïlandaise</p>
+          <div class="tab-pane fade" id="pills-accompagnements" role="tabpanel" aria-labelledby="pills-accompagnements-tab">
+            <div class="row section_menu_grid_item accompagnments ">
+              <div class="col-md-6 section_menu_item">
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Nouilles de riz sautées aux crevettes "Pad Thaï"</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 8</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Demie mangue thaïlandaise avec riz gluand</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 11</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 28</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Ananas confit au Cointreau, glace au choix</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Nouilles de riz sautées au poulet "Pad Sea Ew"</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 16</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 26</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Sauté de légumes mixtes à la sauce d'huitre</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 16</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
               </div>
-              <hr>
+              <div class="col-md-6 section_menu_item">
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Nouilles de riz sautées au poulet et piment frais</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 28</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Riz blanc</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 3</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Riz sauté à l'ail et ciboulette</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 5</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+              </div>
             </div>
-            <div class="col-md-6 section_menu_item">
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Salade de fruits exotiques</p>
+          </div>
+          <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-desserts-tab">
+            <div class="row section_menu_grid_item desserts ">
+              <div class="col-md-6 section_menu_item">
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Demie mangue thaïlandaise</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 6</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                      <p>Flan de marron au lait de coco</p>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 7</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 8</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="menu-item">
-                  <div class="col-9">
-                    <div class="section_menu_item_name text-left">
-                       <p>Glace ou sorbet au choix (par boule)</p>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Demie mangue thaïlandaise avec riz gluand</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="section_menu_item_price texte-center">
-                      <strong>Frs 3,50</strong>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 11</strong>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Ananas confit au Cointreau, glace au choix</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 16</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
               </div>
-              <hr>
+              <div class="col-md-6 section_menu_item">
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Salade de fruits exotiques</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 6</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                        <p>Flan de marron au lait de coco</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 7</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="menu-item">
+                    <div class="col-9">
+                      <div class="section_menu_item_name text-left">
+                         <p>Glace ou sorbet au choix (par boule)</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="section_menu_item_price texte-center">
+                        <strong>Frs 3,50</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="home-link text-center">
-        <%= link_to "Reservation", new_reservation_path, class: "btn-reservation-home" %>
+        <%= link_to "Book a table", new_reservation_path, class: "btn-reservation-home btn-black" %>
       </div>
     </div>
   </div>
@@ -610,14 +615,14 @@
   <%= image_tag "salle-width.png" %>
 </div>
 
-<section class="section section-info">
+<section class="section section-info" id="contact">
   <div class="wrapper-info">
     <div class="container">
-      <div class="title-info text-center">
+      <div class="title-header title-info text-center">
         <h2>Contact</h2>
       </div>
       <div class="row mt-5">
-        <div class="col-md-6">
+        <div class=" col-sm-12 col-md-6 justify-content-center">
           <div class="window-info">
             <div class="title-window">
               <h5>CONTACT INFO</h5>
@@ -627,15 +632,15 @@
             <ul class="list-contact">
               <li class="list-item d-flex mb-3">
                 <i class="fas fa-map-marker-alt"></i>
-                <h5>rue du Gaudy-le-Fort 14, 1213 Onex</h5>
+                <p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
               </li>
               <li class="list-item d-flex mb-3">
                 <i class="fas fa-phone"></i>
-                <h5>+41 22 792 1900</h5>
+                <p>+41 22 792 1900</p>
               </li>
               <li class="list-item d-flex mb-3">
                 <i class="far fa-envelope"></i>
-                <h5>contact@tabledesartisans.ch</h5>
+                <p>contact@tabledesartisans.ch</p>
               </li>
             </ul>
           </div>
@@ -647,20 +652,20 @@
             </div>
 
             <ul class="list-contact">
-              <li class="list-hours d-flex justify-content-between mb-3">
-                <h5>MONDAY - FRIDAY</h5>
-                <h5>12H - 14H30</h5>
+              <li class="list-item d-flex justify-content-between mb-3">
+                <p>Monday - Friday</p>
+                <p>12H - 14H30</p>
               </li>
-              <li class="list-hours d-flex justify-content-between mb-3">
-                <h5>TUESDAY - SATURDAY</h5>
-                <h5>19H - 22H30</h5>
+              <li class="list-item d-flex justify-content-between mb-3">
+                <p>Tuesday - Saturday</p>
+                <p>19H - 22H30</p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-12 col-md-6 justify-content-center">
           <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.429257521167!2d6.097866650945921!3d46.182015993177515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0805a3879d47302!2sLa+Table+des+Artisans+-+Restaurant+Tha%C3%AF!5e0!3m2!1sfr!2sfr!4v1554471937689!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.429257521167!2d6.097866650945921!3d46.182015993177515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0805a3879d47302!2sLa+Table+des+Artisans+-+Restaurant+Tha%C3%AF!5e0!3m2!1sfr!2sfr!4v1554471937689!5m2!1sfr!2sfr" width="540" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
 
